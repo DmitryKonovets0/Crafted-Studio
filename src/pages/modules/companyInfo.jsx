@@ -1,11 +1,11 @@
-import React from "react"
-import {Component} from "react";
-import styled from "styled-components"
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
 import star from "../../assets/icons/star-orange.svg"
 import block from "../../assets/../assets/images/Rectangle-CompanyInfo.svg"
 const CompanySection = styled.section`
-    height: 927px;
+    height: 660px;
+    padding-top: 130px;
 `,Container = styled.div`
     width: 90%;
     margin: 0 auto;

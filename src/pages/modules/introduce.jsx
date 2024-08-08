@@ -1,6 +1,5 @@
-import React from "react"
-import {Component} from "react";
-import styled from "styled-components"
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
 
 import chair from '../../assets/images/long-chair.png'

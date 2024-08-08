@@ -3,8 +3,8 @@ import {Component} from "react";
 import styled, {createGlobalStyle} from "styled-components";
 
 import Introduce from '../pages/modules/introduce'
-import CompanyInfo from '../pages/modules/CompanyInfo'
-
+import CompanyInfo from './modules/companyInfo'
+import Offer from "../pages/modules/offer";
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -25,6 +25,7 @@ export default class IndexPage extends Component {
             <GlobalStyle/>
             <Introduce/>
             <CompanyInfo/>
+            <Offer/>
         </div>
     )
   }
