@@ -5,6 +5,8 @@ import styled, {createGlobalStyle} from "styled-components";
 import Introduce from '../pages/modules/introduce'
 import CompanyInfo from './modules/companyInfo'
 import Offer from "../pages/modules/offer";
+import Designers from "../pages/modules/designers";
+
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -26,6 +28,7 @@ export default class IndexPage extends Component {
             <Introduce/>
             <CompanyInfo/>
             <Offer/>
+            <Designers/>
         </div>
     )
   }
