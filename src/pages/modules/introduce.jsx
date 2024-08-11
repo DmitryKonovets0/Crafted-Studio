@@ -12,15 +12,12 @@ const IntroduceSection = styled.section`
 `, Header = styled.header`
     display: flex;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 104%;
     margin: 0 auto;
     justify-content: space-between;
 `, Logo = styled.div`
     color: #fff;
     font-size: 30px;
-    margin-right: 414px;
+    margin-right: 472px;
 `, LinkWrapper = styled.div`
     color: #fff;
     font-size: 20px;
