@@ -26,9 +26,9 @@ const BestsellersSection = styled.section`
     font-weight: 700;
     color: #fff;
 `,Star = styled.img`
-`,SlideWrapper = styled.div`
 `,Slide = styled.img`
     padding-right: 10px;
+    margin-left: 77px;
 `,Arrow = styled.img`
     width: 60px; 
     height: 60px;
@@ -42,7 +42,7 @@ const NextArrow = (props) => {
             src={arrow}
             alt="Next"
             className={className}
-            style={{ ...style, right: '73px', top:"549px" }} // Сдвиг вправо для внешнего вида
+            style={{ ...style, right: '73px', top:"630px" }} // Сдвиг вправо для внешнего вида
             onClick={onClick}
         />
     );
@@ -55,7 +55,7 @@ const PrevArrow = (props) => {
             src={arrow}
             alt="Previous"
             className={className}
-            style={{ ...style, left: '73px', top:"549px", transform: 'rotate(180deg)' }} // Поворот и сдвиг влево
+            style={{ ...style, left: '73px', top:"609px", transform: 'rotate(180deg)' }} // Поворот и сдвиг влево
             onClick={onClick}
         />
     );
@@ -64,7 +64,7 @@ export default class Bestsellers extends Component {
     render() {
         const settings = {
             speed: 500,
-            slidesToShow: 3.5,
+            slidesToShow: 2.8,
             slidesToScroll: 1,
             infinite: false,
             centeredSlides: true,
@@ -81,7 +81,7 @@ export default class Bestsellers extends Component {
                         </Title>
                         <Star src={star} alt=""/>
                     </TitleWrapper>
-                    <SlideWrapper>
+                    <div>
                         <Slider {...settings}>
                             <Slide src={armchair} alt=""/>
                             <Slide src={hangingChair} alt=""/>
@@ -93,7 +93,7 @@ export default class Bestsellers extends Component {
                             <Slide src={hangingChair} alt=""/>
                             <Slide src={clock} alt=""/>
                         </Slider>
-                    </SlideWrapper>
+                    </div>
                 </Container>
             </BestsellersSection>
         )
