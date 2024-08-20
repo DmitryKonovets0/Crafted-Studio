@@ -6,18 +6,18 @@ import "slick-carousel/slick/slick-theme.css";
 
 import star from "../../assets/icons/star-pink.svg";
 
-import armchair from "../../assets/images/bestseller-armchair.png";
-import hangingChair from "../../assets/images/bestseller-armchair-2.png";
-import clock from "../../assets/images/bestseller-clock.png";
+import armchair from "../../assets/images/bestseller/armchair.png";
+import hangingChair from "../../assets/images/bestseller/armchair-2.png";
+import clock from "../../assets/images/bestseller/clock.png";
 import arrow from "../../assets/icons/arrow-slider.svg";
 
 const BestsellersSection = styled.section`
-    height: 1257px;
+    height: 900px;
     position: relative;
 `, Container = styled.div`
     margin: 0 auto;
 `, TitleWrapper = styled.div`
-    margin-left: 75px ;
+    margin-left: 77px ;
     display: flex;
     gap: 50px;
     margin-bottom: 120px;
@@ -25,7 +25,6 @@ const BestsellersSection = styled.section`
     font-size: 50px;
     font-weight: 700;
     color: #fff;
-`,Star = styled.img`
 `,Slide = styled.img`
     padding-right: 10px;
     margin-left: 77px;
@@ -34,7 +33,6 @@ const BestsellersSection = styled.section`
     height: 60px;
     cursor: pointer;
 `;
-
 const NextArrow = (props) => {
     const { className, style, onClick } = props;
     return (
@@ -42,7 +40,7 @@ const NextArrow = (props) => {
             src={arrow}
             alt="Next"
             className={className}
-            style={{ ...style, right: '73px', top:"630px" }} // Сдвиг вправо для внешнего вида
+            style={{ ...style, right: '77px', top:"630px" }}
             onClick={onClick}
         />
     );
@@ -55,7 +53,7 @@ const PrevArrow = (props) => {
             src={arrow}
             alt="Previous"
             className={className}
-            style={{ ...style, left: '73px', top:"609px", transform: 'rotate(180deg)' }} // Поворот и сдвиг влево
+            style={{ ...style, left: '77px', top:"609px", transform: 'rotate(180deg)' }}
             onClick={onClick}
         />
     );
@@ -79,7 +77,7 @@ export default class Bestsellers extends Component {
                         <Title>
                             Bestsellers
                         </Title>
-                        <Star src={star} alt=""/>
+                        <img src={star} alt=""/>
                     </TitleWrapper>
                     <div>
                         <Slider {...settings}>

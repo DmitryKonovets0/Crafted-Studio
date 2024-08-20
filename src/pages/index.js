@@ -13,7 +13,7 @@ import CompanyInfo from './modules/companyInfo'
 import Offer from "../pages/modules/offer";
 import Designers from "../pages/modules/designers";
 import Bestsellers from "../pages/modules/bestsellers";
-
+import Sofas from "./modules/sofas";
 const GlobalStyle = createGlobalStyle`
     @font-face {
         font-family: 'OutfitLight';
@@ -65,6 +65,7 @@ export default class IndexPage extends Component {
             <Offer/>
             <Designers/>
             <Bestsellers/>
+            <Sofas/>
         </div>
     )
   }
